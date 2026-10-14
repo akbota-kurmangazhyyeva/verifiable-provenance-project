@@ -48,6 +48,21 @@ pip install -r requirements.txt
 forge build
 ```
 
+## Tests
+
+```bash
+forge test          # contracts (fuzz seed fixed in foundry.toml)
+```
+
+## Contracts
+
+- `ProvenanceRegistry` stores one record per commitment: submitter, block
+  timestamp, block number and a model id. The first submission wins and cannot
+  be overwritten. A commitment can also be the Merkle root of a batch;
+  `verifyInclusion` checks that a single commitment belongs to a committed batch.
+- `ProvenanceLog` is the cheaper baseline: it only emits an event, so other
+  contracts cannot read it and duplicates are not rejected.
+
 ## Third-party code
 
 | Component                                                                  | Version | Licence | Used for                     |

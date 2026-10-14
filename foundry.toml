@@ -14,3 +14,8 @@ optimizer_runs = 200
 remappings = ["@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/"]
 
 fs_permissions = [{ access = "read", path = "./data" }]
+
+[fuzz]
+# Fixed seed so fuzz runs are repeatable.
+seed = "0x435"
+runs = 256
