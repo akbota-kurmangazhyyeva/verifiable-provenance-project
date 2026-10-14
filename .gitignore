@@ -1,0 +1,21 @@
+# Foundry
+out/
+cache/
+broadcast/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets: never commit keys or RPC URLs
+.env
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
