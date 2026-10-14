@@ -59,6 +59,38 @@ Both suites check the same Merkle root (`test_RootMatchesPythonImplementation`
 and `test_root_matches_solidity_test_vector`), so a proof built in Python is
 accepted by the contract.
 
+## Reproducing the results
+
+With the virtual environment from Setup active, generate the measurements and
+the figure with:
+
+```bash
+python scripts/measure_gas.py
+python scripts/plot_gas.py
+```
+
+The first command starts and stops its own local node. It writes
+`data/gas_single.csv`, `data/gas_batch.csv`, and `gas_meta.json`; the second
+writes `figures/gas_per_record.pdf`.
+
+To create and check a single record yourself, use a separate local node:
+
+```bash
+export ANVIL_PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+anvil --port 8545 --hardfork prague
+```
+
+In another terminal:
+
+```bash
+export ANVIL_PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+export REGISTRY=$(forge create --broadcast --json src/contracts/ProvenanceRegistry.sol:ProvenanceRegistry --rpc-url http://127.0.0.1:8545 --private-key "$ANVIL_PRIVATE_KEY" | python -c 'import json, sys; print(json.load(sys.stdin)["deployedTo"])')
+printf 'Name a moon.\n' > prompt.txt
+printf 'Europa\n' > output.txt
+PYTHONPATH=src python -m provenance.cli commit prompt.txt output.txt example/model --registry "$REGISTRY" --receipt receipt.json
+PYTHONPATH=src python -m provenance.cli verify receipt.json
+```
+
 ## Commitment scheme
 
 ```
