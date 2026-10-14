@@ -99,6 +99,13 @@ contract ProvenanceRegistryTest is Test {
         root = _hashPair(n12, _leaf(C3));
     }
 
+    function test_RootMatchesPythonImplementation() public pure {
+        // MerkleTree([keccak256(b"record 1"), ..., keccak256(b"record 3")]).root
+        // from src/provenance/merkle.py; the same value is asserted in tests/test_merkle.py
+        (bytes32 root,) = _batch();
+        assertEq(root, 0xafd0cec88b49eff5faf50f62db47175b79ed74335420cad1b57b2e233ef0e9e5);
+    }
+
     function test_VerifyInclusion_AllLeaves() public {
         (bytes32 root, bytes32 n12) = _batch();
         registry.commit(root, MODEL);

@@ -52,7 +52,25 @@ forge build
 
 ```bash
 forge test          # contracts (fuzz seed fixed in foundry.toml)
+python -m pytest    # Python library (random seeds fixed in the tests)
 ```
+
+Both suites check the same Merkle root (`test_RootMatchesPythonImplementation`
+and `test_root_matches_solidity_test_vector`), so a proof built in Python is
+accepted by the contract.
+
+## Commitment scheme
+
+```
+content_hash = keccak256(canonical_json(record))
+commitment   = keccak256(salt || content_hash)      salt: 32 random bytes
+```
+
+`record` holds model, prompt, output, generation parameters and creation time
+(`src/provenance/record.py`). The salt stops anyone from confirming a guessed
+prompt or output against the chain. To prove provenance later, the owner
+publishes the record and the salt; anyone can recompute the commitment and look
+it up in `ProvenanceRegistry`.
 
 ## Contracts
 
