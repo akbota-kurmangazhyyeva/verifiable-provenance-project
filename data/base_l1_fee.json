@@ -1,0 +1,1217 @@
+{
+  "description": "L1 data fee (receipt field l1Fee) of Base transactions with 68-byte calldata, like a registry commit",
+  "rpc": "https://mainnet.base.org",
+  "blocks": "200 evenly spaced in 52832527-53306026",
+  "retrieved": "2026-11-24",
+  "samples": 200,
+  "l1_fee_wei": {
+    "median": 674864746.0,
+    "p95": 7230281979,
+    "min": 292927418,
+    "max": 258044344056
+  },
+  "eth_usd": 2231.26,
+  "l1_fee_usd_median": 1.50579871315996e-06,
+  "transactions": [
+    {
+      "block": 52832527,
+      "tx_hash": "0xb527f1e47751c803cad8af783070a0bee85d2aed4194386d5137fd18bb203116",
+      "l1_fee_wei": 567005092,
+      "execution_fee_wei": 308790000000
+    },
+    {
+      "block": 52834894,
+      "tx_hash": "0x7b5e8d2e3b38ee8be539766c0dc8fc39c9975ebfe4a831ae8b7bed81b9f6c5b0",
+      "l1_fee_wei": 2230176926,
+      "execution_fee_wei": 324678000000
+    },
+    {
+      "block": 52837261,
+      "tx_hash": "0x14c2e82228dff16bebe6f5aa788eea210bb41bd3c534c497c4845c031843d840",
+      "l1_fee_wei": 932874682,
+      "execution_fee_wei": 887423798793
+    },
+    {
+      "block": 52839629,
+      "tx_hash": "0x0d3c5404cb7f3771a19c4d197f5f679d2fe38e22c40b39bf885fe664f055e0e0",
+      "l1_fee_wei": 1297136009,
+      "execution_fee_wei": 306222000000
+    },
+    {
+      "block": 52841996,
+      "tx_hash": "0x2f50b6fcb642a1cbde04dc035b5863ac9e26e10a0ee8314717863c239f824dc7",
+      "l1_fee_wei": 687914941,
+      "execution_fee_wei": 148944000000
+    },
+    {
+      "block": 52844364,
+      "tx_hash": "0x28c65876de6f094c4cf31bb7f05f509d5df6cf4dcc110cc053e82927dceafdd2",
+      "l1_fee_wei": 447166217,
+      "execution_fee_wei": 717882500000
+    },
+    {
+      "block": 52846731,
+      "tx_hash": "0xee69331a2dc5cf7e2eb0eb7965ce0f335e56641e9cea295ae3028ed923276e03",
+      "l1_fee_wei": 383241786,
+      "execution_fee_wei": 283072200000
+    },
+    {
+      "block": 52849099,
+      "tx_hash": "0x4a08e5436c0d28f231cce5547372465c1e0709f869396558eed0bde47dce3fa9",
+      "l1_fee_wei": 425477632,
+      "execution_fee_wei": 373336792829
+    },
+    {
+      "block": 52851466,
+      "tx_hash": "0x6d144470a7568e86310e2c7af2fa6b34e7c6a64aee6fa183cc2fb057590e064e",
+      "l1_fee_wei": 389672596,
+      "execution_fee_wei": 373336792829
+    },
+    {
+      "block": 52853834,
+      "tx_hash": "0xa37648d56b298ace542b3f198c7869e883a00caea17bf07a88d9d05d294148d6",
+      "l1_fee_wei": 563389504,
+      "execution_fee_wei": 372810000000
+    },
+    {
+      "block": 52856201,
+      "tx_hash": "0x1287a99314660d15be72298db62d51120f47dff15badb3cb99ce121bfbd1ba8f",
+      "l1_fee_wei": 994732992,
+      "execution_fee_wei": 826992000000
+    },
+    {
+      "block": 52858569,
+      "tx_hash": "0xd3a70f26e97557c5a28d48a07ec22801f6e938cee33bad916f378fac0fc29f80",
+      "l1_fee_wei": 15211313084,
+      "execution_fee_wei": 2996100000000
+    },
+    {
+      "block": 52860936,
+      "tx_hash": "0x12e5d3c82d08479631682c488353dd440061f5faa34218d975f5a116b7763d02",
+      "l1_fee_wei": 4807413094,
+      "execution_fee_wei": 560539174936
+    },
+    {
+      "block": 52863304,
+      "tx_hash": "0x15011d2f6bf79d4a92063e48a35b5533c74ea07a659808a75e4fadf5a7daa421",
+      "l1_fee_wei": 3881402049,
+      "execution_fee_wei": 4505900000000
+    },
+    {
+      "block": 52865671,
+      "tx_hash": "0x9803e8835279b7ba8ae39597c99f43171683c42bbb8c2eb21cf66030f94e5853",
+      "l1_fee_wei": 2232815111,
+      "execution_fee_wei": 241482000000
+    },
+    {
+      "block": 52868039,
+      "tx_hash": "0x932f5e72061e336847c6c7ed847797da8a46614e39733871802cdb05f9c3745a",
+      "l1_fee_wei": 1012699601,
+      "execution_fee_wei": 454492800000
+    },
+    {
+      "block": 52870406,
+      "tx_hash": "0x22eee5bae38973c1aefa6a06d441e65980bc992f073294b86513f4c218403861",
+      "l1_fee_wei": 1243149934,
+      "execution_fee_wei": 373336792829
+    },
+    {
+      "block": 52872774,
+      "tx_hash": "0xacd193e1bb1cfa7ef1f6d26b209822c77f7846919726a51e10469a961ce9d643",
+      "l1_fee_wei": 1193469508,
+      "execution_fee_wei": 241482000000
+    },
+    {
+      "block": 52875141,
+      "tx_hash": "0x467e0f224a79f84a34b7317e24f5a4b0611f481f8ff6db13bb27b782bb2d0d8d",
+      "l1_fee_wei": 452263611,
+      "execution_fee_wei": 372882000000
+    },
+    {
+      "block": 52877509,
+      "tx_hash": "0x1f06c291ffba355ae6d85d163b0f67e1be3bca06b73853e4f5bd770f83b1f0a7",
+      "l1_fee_wei": 381630454,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 52879876,
+      "tx_hash": "0x627eb9cd59511dd3efafa0e83dcef0ae075818a6e6eba5ac660e1388455c0dfd",
+      "l1_fee_wei": 380924257,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 52882244,
+      "tx_hash": "0xe7300f1d02383097b19cea6bdc09dcce8d1e38e76257de8aa1e23fc460782852",
+      "l1_fee_wei": 365858406,
+      "execution_fee_wei": 233145046629
+    },
+    {
+      "block": 52884611,
+      "tx_hash": "0x3f09bca455986351f6e132183a0eee4471a3f4bd31a431b31308b1c6e44c7acd",
+      "l1_fee_wei": 372592968,
+      "execution_fee_wei": 241554000000
+    },
+    {
+      "block": 52886979,
+      "tx_hash": "0x269ad5127568858966b6ace23f1585dcf14a6e00ecfd99b8d0fbb76f28b2ae44",
+      "l1_fee_wei": 314431953,
+      "execution_fee_wei": 292883500000
+    },
+    {
+      "block": 52889346,
+      "tx_hash": "0x4d97479d73dd594a224f6a0a052264ddcacdaca8df45fd09f9d1d5d8620556be",
+      "l1_fee_wei": 2006874263,
+      "execution_fee_wei": 356394000000
+    },
+    {
+      "block": 52891714,
+      "tx_hash": "0x0fcd023cbe5320e138fab5f77c3f6eb8855806f61206af1919e6662e8b19831d",
+      "l1_fee_wei": 718533812,
+      "execution_fee_wei": 324338400000
+    },
+    {
+      "block": 52894081,
+      "tx_hash": "0xfba947a5188139cb0840ea265c8dc364e5ed3dbd1acac5a452515f07c5541d67",
+      "l1_fee_wei": 376275336,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 52896449,
+      "tx_hash": "0x3e94ed0d28ec577f4d427e7538ac349955527ae979017f885710612cd3dbb4c9",
+      "l1_fee_wei": 503351459,
+      "execution_fee_wei": 318699150000
+    },
+    {
+      "block": 52898816,
+      "tx_hash": "0x45ca0aa6e0bbcefba8ed61fbfd94520b7c11ef0774086a71509a4b1cf5cb7b39",
+      "l1_fee_wei": 645214775,
+      "execution_fee_wei": 528761004194
+    },
+    {
+      "block": 52901184,
+      "tx_hash": "0x1bdca24d77a2504f5e455b1e3c6f8c2deb36d6108c9822bf94402e47100ad859",
+      "l1_fee_wei": 5674582319,
+      "execution_fee_wei": 838991209160
+    },
+    {
+      "block": 52903551,
+      "tx_hash": "0xa9e3d59f94b6ba348380bc8c12fd5f5ec33ba0531a93889b373bc86d79eb6b6d",
+      "l1_fee_wei": 9889009787,
+      "execution_fee_wei": 461806570342
+    },
+    {
+      "block": 52905919,
+      "tx_hash": "0xd57acd0a5da62de52b4614a606a8cd8ffd54cc3f132d11b02eb1f197fda8f61b",
+      "l1_fee_wei": 3309679202,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 52908286,
+      "tx_hash": "0xad4fb2270cb6ff46e8d24f871fc1b49bfc7964aa64047cd8d14d1175ee4acea7",
+      "l1_fee_wei": 1405821033,
+      "execution_fee_wei": 402127596255
+    },
+    {
+      "block": 52910654,
+      "tx_hash": "0x845d6182f53dc7bb8ebdb149db896fff7c833a529b1a055f1632f12a371761c8",
+      "l1_fee_wei": 1570118682,
+      "execution_fee_wei": 484345204343
+    },
+    {
+      "block": 52913021,
+      "tx_hash": "0x99014a72256501f05bb23b04638e328e1920ebb7bc0fdb5a695a30cd580ae5d6",
+      "l1_fee_wei": 590421468,
+      "execution_fee_wei": 230094000000
+    },
+    {
+      "block": 52915389,
+      "tx_hash": "0xd6cd0237f0e75438ef391c499ec8f3837458e63aa9c64c2463dd90b1031d8fd4",
+      "l1_fee_wei": 588262318,
+      "execution_fee_wei": 376091403326
+    },
+    {
+      "block": 52917756,
+      "tx_hash": "0xab60f354835656f0cafab6278b1c8e3aad4a5e37f4eb6385491ecfbe900ca0b1",
+      "l1_fee_wei": 1791325527,
+      "execution_fee_wei": 241626000000
+    },
+    {
+      "block": 52920124,
+      "tx_hash": "0xf7c041da790bdbebbd2d2c60e4ddbbc3abf944b91ca7b95d6c082b5b931ae610",
+      "l1_fee_wei": 539088680,
+      "execution_fee_wei": 2730640000000
+    },
+    {
+      "block": 52922491,
+      "tx_hash": "0x847b597bba75e56c6bb8aa16e1204d20abcf44fcc888263424be6e0fabe2083c",
+      "l1_fee_wei": 1463384311,
+      "execution_fee_wei": 317472000000
+    },
+    {
+      "block": 52924859,
+      "tx_hash": "0x22314be19d80488615c27056f2a7645ce60f63b230ea98dfb6e201f3254fa8ea",
+      "l1_fee_wei": 4193955463,
+      "execution_fee_wei": 92917234480000
+    },
+    {
+      "block": 52927226,
+      "tx_hash": "0xa9eab66012692ff7bcb879e35f473950735a18cc303a124c80fcd4105d674623",
+      "l1_fee_wei": 396176921,
+      "execution_fee_wei": 275456000000
+    },
+    {
+      "block": 52929594,
+      "tx_hash": "0xc3ae6962ac5184cdfac83ecde7d1062bbd92a6a80fcb7693dfec867fadb5ff75",
+      "l1_fee_wei": 682489974,
+      "execution_fee_wei": 784320000000
+    },
+    {
+      "block": 52931961,
+      "tx_hash": "0xf74bffa847d345b0d37ec71e3c745b695f756a5b1864ea7c9a8a51c2a2567d3c",
+      "l1_fee_wei": 1637757881,
+      "execution_fee_wei": 623023612853
+    },
+    {
+      "block": 52934329,
+      "tx_hash": "0x878d837f6ebc2a97493d7e3f8c187e7035f75955427c450cc5b90c8ef8812457",
+      "l1_fee_wei": 1794158783,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 52936696,
+      "tx_hash": "0xb41dcac530cbf04dd9aadd203862f7d23ae8c2d4d394e25b8df61a26bd7d6375",
+      "l1_fee_wei": 1074692118,
+      "execution_fee_wei": 241410000000
+    },
+    {
+      "block": 52939064,
+      "tx_hash": "0xfe6ccba224df3af88122344c1817152e4ce4e4d90b67e6ff54099eb6dcd7d13e",
+      "l1_fee_wei": 1983098873,
+      "execution_fee_wei": 509704868049
+    },
+    {
+      "block": 52941431,
+      "tx_hash": "0x7583f36a512861202a20ba699fcb220dcfa23b25ea9920c57da15b4eae9e10a0",
+      "l1_fee_wei": 1641351744,
+      "execution_fee_wei": 277674555494
+    },
+    {
+      "block": 52943799,
+      "tx_hash": "0xeed3a9d19fca678c016f45b5bb824a9c6282dfeb2ed187ed407ac7f993eb0256",
+      "l1_fee_wei": 3413687216,
+      "execution_fee_wei": 387817086315
+    },
+    {
+      "block": 52946166,
+      "tx_hash": "0x83ddda6448e6e0bbcd840bbed007b329a736cb53a9ccbff44e5e1a16eb74a370",
+      "l1_fee_wei": 10302825225,
+      "execution_fee_wei": 340937550000
+    },
+    {
+      "block": 52948534,
+      "tx_hash": "0xb609f143f9638f7c04607f85b3f7fffbe356cd2a8c3e32a5996cc5aea04a2e1f",
+      "l1_fee_wei": 7041995062,
+      "execution_fee_wei": 149770950000
+    },
+    {
+      "block": 52950901,
+      "tx_hash": "0x400fb39ee1c639709ce82ff13588c03e0d3e0abc77f17986fefcc022e32950cf",
+      "l1_fee_wei": 2758097801,
+      "execution_fee_wei": 372882000000
+    },
+    {
+      "block": 52953269,
+      "tx_hash": "0x0622b3fe200cf6c8a63a43983b2c31a9088050c49072dc1181bdb75a3eaffee2",
+      "l1_fee_wei": 1980363242,
+      "execution_fee_wei": 345660275000
+    },
+    {
+      "block": 52955636,
+      "tx_hash": "0xf5086080a6c6783ef81f60a802de6e741e9d91d67caf845fd64098eee4e1bfb3",
+      "l1_fee_wei": 1054407588,
+      "execution_fee_wei": 372882000000
+    },
+    {
+      "block": 52958004,
+      "tx_hash": "0x5cbdbec74995ecd2fcb0bd7065345711af75a61d8eeef85dae91c1ff2e356cca",
+      "l1_fee_wei": 1257793048,
+      "execution_fee_wei": 242709251771
+    },
+    {
+      "block": 52960371,
+      "tx_hash": "0x35b3519204620c81ac852ec72fb960f3c93965a4b0c9895003bc812ac264fad1",
+      "l1_fee_wei": 613566563,
+      "execution_fee_wei": 772083900000
+    },
+    {
+      "block": 52962739,
+      "tx_hash": "0x048446b2a4c3164b2734f312b8e265ab3ef00f91923294e0ee335358437be847",
+      "l1_fee_wei": 427486444,
+      "execution_fee_wei": 373262419200
+    },
+    {
+      "block": 52965106,
+      "tx_hash": "0x1f8ba608ed04c9f7e5c3059fdc72a749b20da7bdb41f05893f305d69d8339da6",
+      "l1_fee_wei": 381628678,
+      "execution_fee_wei": 608431815000
+    },
+    {
+      "block": 52967474,
+      "tx_hash": "0x2facef0777ea714663a9a17b3c05be14e62ea49131342020f97e26d3edf06fdc",
+      "l1_fee_wei": 386746259,
+      "execution_fee_wei": 688657281306
+    },
+    {
+      "block": 52969841,
+      "tx_hash": "0xc0dd3778dcea3f7f142dea9caddefa0ab4218d25fe1243d29e4640d890714df5",
+      "l1_fee_wei": 428577352,
+      "execution_fee_wei": 241554000000
+    },
+    {
+      "block": 52972209,
+      "tx_hash": "0x6393fc8e1136e9bf3b5d3181b560a4c1ad6d9e0e4eec99c8de52e996f8c109d6",
+      "l1_fee_wei": 434416771,
+      "execution_fee_wei": 311120000000
+    },
+    {
+      "block": 52974576,
+      "tx_hash": "0x030c458ba2ce0eade40d6c1fe4150773ff020b67bdb21e08bee9a6059205257f",
+      "l1_fee_wei": 470808948,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 52976944,
+      "tx_hash": "0x04a41d629c365b0e9dcf1a54d7a7c058ed61f6544890bb7d39a33ad2108459a8",
+      "l1_fee_wei": 610938226,
+      "execution_fee_wei": 4941722030604
+    },
+    {
+      "block": 52979311,
+      "tx_hash": "0x86b703785efd94983787a901df69e0a1c6d6d42ee5973536856e9f2224889723",
+      "l1_fee_wei": 515899830,
+      "execution_fee_wei": 289951200000
+    },
+    {
+      "block": 52981679,
+      "tx_hash": "0x07bc18319fb5f814c9f411843bbd540fccf3ea1b0560a1cdbd4a0c4e5a06fb98",
+      "l1_fee_wei": 612145987,
+      "execution_fee_wei": 175686000000
+    },
+    {
+      "block": 52984046,
+      "tx_hash": "0x9ae1efdf1fce1588ea350784b171537142b1d6b023154936c7f6be9836e833bd",
+      "l1_fee_wei": 920048002,
+      "execution_fee_wei": 568018000000
+    },
+    {
+      "block": 52986414,
+      "tx_hash": "0x2e4bf917fbd7294ef587b6a2287d641a4d6d8dd6f0a038165d27f53aa50f8eb5",
+      "l1_fee_wei": 1332433139,
+      "execution_fee_wei": 894973242679
+    },
+    {
+      "block": 52988781,
+      "tx_hash": "0x6d582eb552aabd6e810e2601925f48794c7c1ad44ed5e872fb5e15072f0c1092",
+      "l1_fee_wei": 2319429799,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 52991149,
+      "tx_hash": "0x47bc3b943b456505543d68ef07057d81bb03898c45bfdf1abee2602796da6d31",
+      "l1_fee_wei": 1243083858,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 52993516,
+      "tx_hash": "0x6e55f1e42bd161963d3dc12198c633c9a350d91fbaf0304f4990d3e5137182b1",
+      "l1_fee_wei": 1170400875,
+      "execution_fee_wei": 234776397350
+    },
+    {
+      "block": 52995884,
+      "tx_hash": "0x8387d5d4ea3249a290e17db6521f6aba0e428ede9ae37cf11ed769120593db22",
+      "l1_fee_wei": 1186550182,
+      "execution_fee_wei": 273629400000
+    },
+    {
+      "block": 52998251,
+      "tx_hash": "0xe31b576e14b32d478a3dec63f89edacfe96aba4c0e695456bce6dab77913ccf1",
+      "l1_fee_wei": 1200345406,
+      "execution_fee_wei": 553264000000
+    },
+    {
+      "block": 53000619,
+      "tx_hash": "0x882efdf5e81de27bfdbe03d2bf4afa42bfb94c8b1350c7b99b4f35cfaf184200",
+      "l1_fee_wei": 536576608,
+      "execution_fee_wei": 373336792829
+    },
+    {
+      "block": 53002986,
+      "tx_hash": "0xc48d82443c2e6440b99f65fa9b980d62073ad601b836c468a288a70be8e19553",
+      "l1_fee_wei": 1004177635,
+      "execution_fee_wei": 427627988788
+    },
+    {
+      "block": 53005354,
+      "tx_hash": "0x4abb635b269d21b12734a4939c4c3c9a3ce56e2aea86e6df7d73d343abcaf5b1",
+      "l1_fee_wei": 393892657,
+      "execution_fee_wei": 6198240000000
+    },
+    {
+      "block": 53007721,
+      "tx_hash": "0x046706ec636649e31fe2884205cf9bf68920553e6d593461466f4dfa264122c9",
+      "l1_fee_wei": 367624262,
+      "execution_fee_wei": 8060052000000
+    },
+    {
+      "block": 53010089,
+      "tx_hash": "0x91d6dec7d008bfda8cbdf994c7727e9ff9eb3d515f3c44860fd1c70cf49a8eb1",
+      "l1_fee_wei": 430119957,
+      "execution_fee_wei": 559137466888
+    },
+    {
+      "block": 53012456,
+      "tx_hash": "0xab291a738ef2619f4598c0137a738f73e336106424a36435c846a8df5f85a61b",
+      "l1_fee_wei": 292927418,
+      "execution_fee_wei": 390928000000
+    },
+    {
+      "block": 53014824,
+      "tx_hash": "0xb37d7a352b544d823c50132a1ddb3b9af86053824e08d7f6728ed28955c81ca8",
+      "l1_fee_wei": 319197749,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53017191,
+      "tx_hash": "0xa0d378dd88dfbf92f158c69d27adcb8b12782238da61eace2ef30f552dada7ab",
+      "l1_fee_wei": 501174336,
+      "execution_fee_wei": 1006475000000
+    },
+    {
+      "block": 53019559,
+      "tx_hash": "0x91b549047eebe23f0471179fb55cce85a1c83409a819a7a0f1fb653dec707f91",
+      "l1_fee_wei": 508963114,
+      "execution_fee_wei": 6164760000000
+    },
+    {
+      "block": 53021926,
+      "tx_hash": "0x549c0912c9f703849408b5ca4d178c11f10796570e20aa6ae71f40d8c7f4f849",
+      "l1_fee_wei": 476962568,
+      "execution_fee_wei": 772083900000
+    },
+    {
+      "block": 53024294,
+      "tx_hash": "0x01b620d6baaa3b89e60cc0b185f88c1693255ffd6076a2f5215c90cb260d23e7",
+      "l1_fee_wei": 385119733,
+      "execution_fee_wei": 332622000000
+    },
+    {
+      "block": 53026661,
+      "tx_hash": "0xa9dfcda9ed082cfb1c24397c640becdfac4c59ea237bb4125ea54826899effd8",
+      "l1_fee_wei": 382624347,
+      "execution_fee_wei": 427555928800
+    },
+    {
+      "block": 53029029,
+      "tx_hash": "0xdd61b070dd33cc86cb06f74f10b5f09bd94e193b1afdcfe3d497b84fff267ade",
+      "l1_fee_wei": 565221664,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53031396,
+      "tx_hash": "0xd8fb06632e689e4724a6285e83ac2329ac629de5651c1f43a10c5a8572356d66",
+      "l1_fee_wei": 2290949103,
+      "execution_fee_wei": 1488950000000
+    },
+    {
+      "block": 53033764,
+      "tx_hash": "0xd0e1c17aed1d77efcaeee6c135dcdae036a6292beb50431445d099d30dc845e0",
+      "l1_fee_wei": 4459141150,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 53036131,
+      "tx_hash": "0xcca050fcb70524daff5bb6c8edba432cb9bfa3ef4886b968ace5c1d8d13e6d9d",
+      "l1_fee_wei": 1223641799,
+      "execution_fee_wei": 278226000000
+    },
+    {
+      "block": 53038499,
+      "tx_hash": "0x77437c88c6041415e662a3506ca1c0bdf8d51b18e94e2b45acb33d491230bcf2",
+      "l1_fee_wei": 628809938,
+      "execution_fee_wei": 233145046629
+    },
+    {
+      "block": 53040866,
+      "tx_hash": "0xe22a06aee22b3c1db83da24db7d9cf95fb91c09e5518af4045935757aecdf692",
+      "l1_fee_wei": 548966921,
+      "execution_fee_wei": 454772182501
+    },
+    {
+      "block": 53043234,
+      "tx_hash": "0x2ef528f38298e08c88d8e8f95f4bdc407d70be4c3318002d5ab2156251db5a10",
+      "l1_fee_wei": 370683283,
+      "execution_fee_wei": 13855860000000
+    },
+    {
+      "block": 53045601,
+      "tx_hash": "0xb7355209ba05dcfd830007bf4789ac9d026745f292a1943a41b32709d66d1876",
+      "l1_fee_wei": 346200208,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53047969,
+      "tx_hash": "0x481d92e9550be98718b86287534b1fc943b1cfeb4a64b7b49446c4b0a0a6f684",
+      "l1_fee_wei": 373585884,
+      "execution_fee_wei": 206742000000
+    },
+    {
+      "block": 53050336,
+      "tx_hash": "0x6712ae40937af650ecc620eafef9f5055924a539bf933c973bf31681af4ed16a",
+      "l1_fee_wei": 328100499,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53052704,
+      "tx_hash": "0x1f7e3594468b28d393c8e6754b27e4d198ba3deb5e42cf5253fc0d92f8d3c991",
+      "l1_fee_wei": 372442231,
+      "execution_fee_wei": 145620000000
+    },
+    {
+      "block": 53055071,
+      "tx_hash": "0xeaef5f3bbaeabbf5c3ec2b1c7aef23655abfa0df05e55c4a8100d7176790395b",
+      "l1_fee_wei": 404467348,
+      "execution_fee_wei": 623143912841
+    },
+    {
+      "block": 53057439,
+      "tx_hash": "0xfcb5f4d345f6f3e65fe6149cd0513c2a2b274a89d5b5d31d6c29bf7a45e1f364",
+      "l1_fee_wei": 297398909,
+      "execution_fee_wei": 419684186229
+    },
+    {
+      "block": 53059806,
+      "tx_hash": "0x9c4a25c10530e073e9e72052d358607d87c58181ad08a166c1a8f05caa2a8d49",
+      "l1_fee_wei": 320493286,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 53062174,
+      "tx_hash": "0xcc73c92ad757b87a300bb4f8dc4010e32b00808cad6ffc3d0d4632a82715dc35",
+      "l1_fee_wei": 413666016,
+      "execution_fee_wei": 409763505921
+    },
+    {
+      "block": 53064541,
+      "tx_hash": "0xcb8715831fede2625fd37dbfc8a4b5eb088edc75edf3736b2098e4596c43b9a0",
+      "l1_fee_wei": 378285202,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53066909,
+      "tx_hash": "0x7ef7e62eb5147194a287ad58b9a65ae896a25e722f3af81349bc80fdbcb6a3ac",
+      "l1_fee_wei": 567157595,
+      "execution_fee_wei": 211074000000
+    },
+    {
+      "block": 53069276,
+      "tx_hash": "0x18d4ca758aa12f19d3fd944161194648c78e0df478d25b4b890eb5484147a7ed",
+      "l1_fee_wei": 388321616,
+      "execution_fee_wei": 230877393718
+    },
+    {
+      "block": 53071643,
+      "tx_hash": "0x8353d50d6c9bc5c2e8fb5cfdc88adc90524151672a8b3b50ced0465074426dff",
+      "l1_fee_wei": 420793145,
+      "execution_fee_wei": 398382000000
+    },
+    {
+      "block": 53074011,
+      "tx_hash": "0x7e0d0223f63a7f73df1225b86e10e5562202efa65828afaefbd04390a888a607",
+      "l1_fee_wei": 402840791,
+      "execution_fee_wei": 26114560000000
+    },
+    {
+      "block": 53076378,
+      "tx_hash": "0x3830db46cb70e85bff2337ccd1849f3e214dca73cbd2c583d5a58efa971964c2",
+      "l1_fee_wei": 624537233,
+      "execution_fee_wei": 340937550000
+    },
+    {
+      "block": 53078746,
+      "tx_hash": "0x63e9aa072cafe9ecb05a450690949584b2eae21b9414e7ddf35859e772a84ea0",
+      "l1_fee_wei": 585143334,
+      "execution_fee_wei": 317010900000
+    },
+    {
+      "block": 53081113,
+      "tx_hash": "0x9d7a1bc22f735c1cefb7d4e8b92de3eff8a3f5ad1ead13965f987cf4d8a2a5a4",
+      "l1_fee_wei": 651315395,
+      "execution_fee_wei": 223144122926
+    },
+    {
+      "block": 53083481,
+      "tx_hash": "0xcfd032e11c190bf99f388408fc0e2a346aec88e470c3cccc8237b783d3a4c632",
+      "l1_fee_wei": 380101706,
+      "execution_fee_wei": 890160000000
+    },
+    {
+      "block": 53085848,
+      "tx_hash": "0x04073c9758dcbb855047c04857ebd306c7b948c79c9fe76c7f8868472d422971",
+      "l1_fee_wei": 402816645,
+      "execution_fee_wei": 361024374240
+    },
+    {
+      "block": 53088216,
+      "tx_hash": "0xbe17a55a382723baca3441955754d049c9eb36a70898c5912644e1cb69e08d89",
+      "l1_fee_wei": 370030378,
+      "execution_fee_wei": 885400745271
+    },
+    {
+      "block": 53090583,
+      "tx_hash": "0x771b4fd13f9b66a337dd8ce52c0a7aa6c32bcbf1fc97fe30c323dfedf30ab652",
+      "l1_fee_wei": 432880804,
+      "execution_fee_wei": 278226000000
+    },
+    {
+      "block": 53092951,
+      "tx_hash": "0x5a40f89abcb13b31a1bdd3eb1ad3115395add66fae86ecbe938d7f48b8ca0ed1",
+      "l1_fee_wei": 686395873,
+      "execution_fee_wei": 498984402357
+    },
+    {
+      "block": 53095318,
+      "tx_hash": "0xeb224b94813e58348e251e444b3ac946f2d9afbc69ba5547928d18e0c699829b",
+      "l1_fee_wei": 691075518,
+      "execution_fee_wei": 585767000000
+    },
+    {
+      "block": 53097686,
+      "tx_hash": "0xf203dc95c6b933d067f44570c02296cffc6d83b9954506fb9002276861e59f42",
+      "l1_fee_wei": 973893625,
+      "execution_fee_wei": 339650175000
+    },
+    {
+      "block": 53100053,
+      "tx_hash": "0xade3e533891ea4b79b71fb109785efa1517b884c1ed516d5db8de8535499255a",
+      "l1_fee_wei": 667239518,
+      "execution_fee_wei": 2935884000000
+    },
+    {
+      "block": 53102421,
+      "tx_hash": "0x51e234a9a90837052f1a34ab6a50a28104cf902b00d9398d8cf1b9cfc45486c5",
+      "l1_fee_wei": 559610528,
+      "execution_fee_wei": 1032678172113
+    },
+    {
+      "block": 53104788,
+      "tx_hash": "0xb504a7c93441f360a974c043bda0aeb707a8a776eee49552520103d60935342f",
+      "l1_fee_wei": 478832972,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53107156,
+      "tx_hash": "0x45f20ac87f603de851f2e691fdaa2fcf4a0b626d98fc9626c8dab2abe10b07a7",
+      "l1_fee_wei": 576459545,
+      "execution_fee_wei": 292883500000
+    },
+    {
+      "block": 53109523,
+      "tx_hash": "0x545341fc0052f4281c05c52917603b2a24c7b90efb3730a0a8df025c8c87248d",
+      "l1_fee_wei": 544426739,
+      "execution_fee_wei": 248003492997
+    },
+    {
+      "block": 53111891,
+      "tx_hash": "0x1ce19606a75e8fbc1d1b6eee77bd293087980c6eac7577041d69e23159f8eebc",
+      "l1_fee_wei": 433202207,
+      "execution_fee_wei": 241626000000
+    },
+    {
+      "block": 53114258,
+      "tx_hash": "0x4e63d483ccea84e360d67b4a2b8f5d9d13a674b28b0085d57c9ad3cc05640db5",
+      "l1_fee_wei": 792881611,
+      "execution_fee_wei": 281425000000
+    },
+    {
+      "block": 53116626,
+      "tx_hash": "0x69ed67e477b986571e40fef7cf9b8383195abe2868c7f28ccb4c99406b7c3845",
+      "l1_fee_wei": 3800528317,
+      "execution_fee_wei": 700695000000
+    },
+    {
+      "block": 53118993,
+      "tx_hash": "0xc32ab7cd3835e27ea31035d4ccb86b05025f7d4c1207271225541c3988a8d572",
+      "l1_fee_wei": 2962340622,
+      "execution_fee_wei": 435113000000
+    },
+    {
+      "block": 53121361,
+      "tx_hash": "0x27b0666990131f5bf5bd3ad268c02635922160ceb0877980b0c1f89be7324af5",
+      "l1_fee_wei": 3736897089,
+      "execution_fee_wei": 559137466888
+    },
+    {
+      "block": 53123728,
+      "tx_hash": "0x838533a1080f6b510e25a802902d3fc428cba5648c884cf47e56e2846933b99d",
+      "l1_fee_wei": 1480985325,
+      "execution_fee_wei": 241554000000
+    },
+    {
+      "block": 53126096,
+      "tx_hash": "0x2c95430a882b563310aa2ecaf02983d0bb5551429be5434a1958831291cf31e4",
+      "l1_fee_wei": 1290170596,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53128463,
+      "tx_hash": "0xb1fb7a7ee8f87d66851c42757ebc588752b0a4c2a3ea44569eb11b5421e8011a",
+      "l1_fee_wei": 447271745,
+      "execution_fee_wei": 497000770000
+    },
+    {
+      "block": 53130831,
+      "tx_hash": "0x375590ba2db88b0c500dc7b445e12545349180764ee773c555b667569052b2d6",
+      "l1_fee_wei": 425769595,
+      "execution_fee_wei": 241626000000
+    },
+    {
+      "block": 53133198,
+      "tx_hash": "0xf07d703df9d1475ca130dbc99d573b5f4a727687d3f3b3df12dc393b02b4b6c8",
+      "l1_fee_wei": 395032843,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 53135566,
+      "tx_hash": "0x845c28262371c51eab8d2625ce914e5bfe82bc7096baf8134eb70650aa97c7c6",
+      "l1_fee_wei": 405841498,
+      "execution_fee_wei": 352684050000
+    },
+    {
+      "block": 53137933,
+      "tx_hash": "0x56d08ff5c96f2fd2109d979b64a265a14b51fc246065f70f52633aa2949f6f02",
+      "l1_fee_wei": 381969685,
+      "execution_fee_wei": 270651309929
+    },
+    {
+      "block": 53140301,
+      "tx_hash": "0x9fa2d29d65f69fdc8e8d4b6b0a2069e7fc83b8b8805389f718092ed9ce7c7754",
+      "l1_fee_wei": 432980461,
+      "execution_fee_wei": 383363980393
+    },
+    {
+      "block": 53142668,
+      "tx_hash": "0x2caf84a9a7b843cd094110866a4c2fd3f9f18c6cbe3e88ee20aa41fe6856e283",
+      "l1_fee_wei": 402646859,
+      "execution_fee_wei": 241554000000
+    },
+    {
+      "block": 53145036,
+      "tx_hash": "0x972892adad07e3de47cf6f1efd23a44f41519ac6d94c7c17988327693d17cdbd",
+      "l1_fee_wei": 434203407,
+      "execution_fee_wei": 559539000000
+    },
+    {
+      "block": 53147403,
+      "tx_hash": "0x34e1d6c41264946c3b0a0d4832f029616f5bfbd3ab49d27b5f6020d52277dd69",
+      "l1_fee_wei": 436619342,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 53149771,
+      "tx_hash": "0xaf091b6620b3ce45a6ec38dc5dfe90f155af0cd6f663206ae0ba9a19b321a8a1",
+      "l1_fee_wei": 391044688,
+      "execution_fee_wei": 241626000000
+    },
+    {
+      "block": 53152138,
+      "tx_hash": "0x9957000bf2b5c378814afa8a61d04f3be0e172f91a127d275ec0609e3d7d7696",
+      "l1_fee_wei": 486494103,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53154506,
+      "tx_hash": "0xee3ae03770dc3a6565a8a5180ac78e49958c7673b5a7b3979b0723a5e4d73cb2",
+      "l1_fee_wei": 1446988485,
+      "execution_fee_wei": 932385000000
+    },
+    {
+      "block": 53156873,
+      "tx_hash": "0x84116f4477ec59b337063a7cc8bfb5f55cad1b206178621f88942b3ae239dbc0",
+      "l1_fee_wei": 581838829,
+      "execution_fee_wei": 379523570400
+    },
+    {
+      "block": 53159241,
+      "tx_hash": "0x59b602c8168f594c17ec17fae0fa33d083efb22470f1a951631a599a1ad5ab4e",
+      "l1_fee_wei": 1135548684,
+      "execution_fee_wei": 1314250612077
+    },
+    {
+      "block": 53161608,
+      "tx_hash": "0x1df4f41251e0b5ab108e56701a09f9dc42761f24597f124bffcca7a6909d8fbb",
+      "l1_fee_wei": 2733404573,
+      "execution_fee_wei": 2716416000000
+    },
+    {
+      "block": 53163976,
+      "tx_hash": "0xea0c936a1f1ae02982bdb2a4825d181eeb3cd7c89cd4c0053cc28c17ff9bc5b9",
+      "l1_fee_wei": 3516004520,
+      "execution_fee_wei": 270426000000
+    },
+    {
+      "block": 53166343,
+      "tx_hash": "0x4dae811eeeafafc176c7c78055d925af44466157ad6c3123f82ee71cad1ba664",
+      "l1_fee_wei": 3672393896,
+      "execution_fee_wei": 605178961355
+    },
+    {
+      "block": 53168711,
+      "tx_hash": "0xdb6082b64d521d2e5f9e4b3723fc4d76a0a85e1aabe9703df3a7d903a697cecf",
+      "l1_fee_wei": 1370066419,
+      "execution_fee_wei": 248122875741
+    },
+    {
+      "block": 53171078,
+      "tx_hash": "0x36b6b2e63f79bb86c701b600e5e29b1b8cc4571a19bae1cbd0cef9d7a2af4b91",
+      "l1_fee_wei": 986266630,
+      "execution_fee_wei": 373475068821
+    },
+    {
+      "block": 53173446,
+      "tx_hash": "0x52e1ffca7fec3437ada076886ac092473c3e2cc91247b8e881a24495d19b905a",
+      "l1_fee_wei": 1344214956,
+      "execution_fee_wei": 384141455232
+    },
+    {
+      "block": 53175813,
+      "tx_hash": "0x6480a541016a07084b5a236efc7901a7308a9e5ca8e86c7e8a0110baf528eb70",
+      "l1_fee_wei": 398080297,
+      "execution_fee_wei": 372954000000
+    },
+    {
+      "block": 53178181,
+      "tx_hash": "0x709b14d7f5cd8d5533895dcb51eb66992c6c77884395c11bc6c78db8bc901e16",
+      "l1_fee_wei": 401598318,
+      "execution_fee_wei": 413340957835
+    },
+    {
+      "block": 53180548,
+      "tx_hash": "0x9973fc7b71038a3f4206635830015a83fdfe43d105470f7dcbff9fe91dc3d279",
+      "l1_fee_wei": 512945004,
+      "execution_fee_wei": 860928000000
+    },
+    {
+      "block": 53182916,
+      "tx_hash": "0xa26f40e0450cf3974398df17d2cbb4a6ff0d5f90897a4fd3eedf2a71bcdd2467",
+      "l1_fee_wei": 385388605,
+      "execution_fee_wei": 270354000000
+    },
+    {
+      "block": 53185283,
+      "tx_hash": "0x8ab50c7b429dd95dbe08d14b02fae63945b843f0dbd219a321b01092d9ff5955",
+      "l1_fee_wei": 419142368,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53187651,
+      "tx_hash": "0x61cb3a4c35cb14a077a73007540bde3fe19be3a711eb7b98cc5160c7a9e1f826",
+      "l1_fee_wei": 403181108,
+      "execution_fee_wei": 305970000000
+    },
+    {
+      "block": 53190018,
+      "tx_hash": "0xf13dbe64f48f5d44c67494820f0e7603fec91f753ebde5ffb6a7a58810c71899",
+      "l1_fee_wei": 453808415,
+      "execution_fee_wei": 314556000000
+    },
+    {
+      "block": 53192386,
+      "tx_hash": "0x87ec15f09751213f84962d67930b1ebe5ecca368b56d249433fe439aad72eaa5",
+      "l1_fee_wei": 1005990181,
+      "execution_fee_wei": 592218000000
+    },
+    {
+      "block": 53194753,
+      "tx_hash": "0xd5fde02dbe47290258223300d8cf65983ca959398d98009370ebb8843951bda9",
+      "l1_fee_wei": 1080697700,
+      "execution_fee_wei": 474112000000
+    },
+    {
+      "block": 53197121,
+      "tx_hash": "0xd7a6e5afaabcb18b7b25369b0b7dea9122f35a7d102059b99eac69b53c9f0998",
+      "l1_fee_wei": 982529293,
+      "execution_fee_wei": 418378056748
+    },
+    {
+      "block": 53199488,
+      "tx_hash": "0x1961985494546d949e176a39336d82d4046d44487f9b32a71ed0c3c5ccf217c7",
+      "l1_fee_wei": 820204347,
+      "execution_fee_wei": 20899620000000
+    },
+    {
+      "block": 53201856,
+      "tx_hash": "0x7b4292369ec91498375345b3ca9e37c9354e52da0df3f5a6ce9a3e3888e63004",
+      "l1_fee_wei": 1092989675,
+      "execution_fee_wei": 372882000000
+    },
+    {
+      "block": 53204223,
+      "tx_hash": "0x1d16d74712be288c4f5eec7efedffe8ae06ba3adb21eb369cf638514020cc298",
+      "l1_fee_wei": 2340763437,
+      "execution_fee_wei": 451836729929
+    },
+    {
+      "block": 53206591,
+      "tx_hash": "0x4be6746aff00f2c6507738199190819040ebdb536dfc3c5ddbd4ba404aab7238",
+      "l1_fee_wei": 1308542856,
+      "execution_fee_wei": 623443327480
+    },
+    {
+      "block": 53208958,
+      "tx_hash": "0xb67cdc7b98988bb8decdaa57a29b1690327c298b5282bb28abdaeedd1a95959f",
+      "l1_fee_wei": 1304597716,
+      "execution_fee_wei": 299390000000
+    },
+    {
+      "block": 53211326,
+      "tx_hash": "0x5434599162deb999b6663046d30637d163c9532f959aa5a1f7ec1f9ac3a53c90",
+      "l1_fee_wei": 1198936980,
+      "execution_fee_wei": 551418000000
+    },
+    {
+      "block": 53213693,
+      "tx_hash": "0xaef94e52ee07a18e9fa47d69cc30b8b0759519733a90f52503b1171b599df634",
+      "l1_fee_wei": 2797418907,
+      "execution_fee_wei": 372810000000
+    },
+    {
+      "block": 53216061,
+      "tx_hash": "0x81aabc5b7568defde95f0c099fbce32cc4e487e9fc143a6e1d7307406b94859f",
+      "l1_fee_wei": 1130265621,
+      "execution_fee_wei": 270426000000
+    },
+    {
+      "block": 53218428,
+      "tx_hash": "0x90ff60ae8d96b686dd9af0a313e29844eebb688d762728cdcd1e68410ddfe7eb",
+      "l1_fee_wei": 500095696,
+      "execution_fee_wei": 831555000000
+    },
+    {
+      "block": 53220796,
+      "tx_hash": "0x6da290cda7b5c6f28a68ea0700061f3197ae90f36f5ec735dfd0936596f36150",
+      "l1_fee_wei": 422802225,
+      "execution_fee_wei": 23308368000000
+    },
+    {
+      "block": 53223163,
+      "tx_hash": "0x2067296caee8e37387f28888ac4db780a654a99440693c58394fde6d410de277",
+      "l1_fee_wei": 397650564,
+      "execution_fee_wei": 280393300000
+    },
+    {
+      "block": 53225531,
+      "tx_hash": "0x1cf3b34e352a0c82c983f844f44170e48bcbd248c4914da33b9839d84ce10364",
+      "l1_fee_wei": 1181832355,
+      "execution_fee_wei": 626524658970
+    },
+    {
+      "block": 53227898,
+      "tx_hash": "0xfe4e6a88aea7bada6831b6af9ac672bbf2ccb4ad5a9ca87733d4e38579bd1e70",
+      "l1_fee_wei": 446172014,
+      "execution_fee_wei": 270282000000
+    },
+    {
+      "block": 53230266,
+      "tx_hash": "0xf85d75f2c9dec2db7e471da9e79a996f516fea1a2cfaefeb30574777f4d7f2d9",
+      "l1_fee_wei": 360720783,
+      "execution_fee_wei": 935312287853
+    },
+    {
+      "block": 53232633,
+      "tx_hash": "0x43d2e171392225a06491b67a77802244b4c9d5b3ab494f1b2ff176e4cf95b2b0",
+      "l1_fee_wei": 405980047,
+      "execution_fee_wei": 16536113000000
+    },
+    {
+      "block": 53235001,
+      "tx_hash": "0x495ddf05cf0953bab67c6acc28ec79357e09a0526f74ebd3e94d04783eaab46c",
+      "l1_fee_wei": 408645603,
+      "execution_fee_wei": 691356503299
+    },
+    {
+      "block": 53237368,
+      "tx_hash": "0x348492c56be6f666fa3ecf8f1c9be844a18c75d868c8ff89800d62a87fa8f584",
+      "l1_fee_wei": 503944839,
+      "execution_fee_wei": 421146000000
+    },
+    {
+      "block": 53239736,
+      "tx_hash": "0x5c5e9182cae7dd75860e60aee8db777c043d1a82ace9eed59abce411f7f86588",
+      "l1_fee_wei": 427977654,
+      "execution_fee_wei": 499149000000
+    },
+    {
+      "block": 53242103,
+      "tx_hash": "0x18b8dec90687e770605d49bc0cb0d24cc469b565894d1e047e621dd30d6ffbe4",
+      "l1_fee_wei": 364927471,
+      "execution_fee_wei": 373336792829
+    },
+    {
+      "block": 53244471,
+      "tx_hash": "0xe60c7155ba0f0f02a4b2ccb68f6e1b7b81de476e8670405d09cc25ca2d1f65fa",
+      "l1_fee_wei": 427822129,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53246838,
+      "tx_hash": "0x9e7eefa6c1e6cb5e96e35a95993f02f6f4bf5495081414c78c3edef172b1ad0d",
+      "l1_fee_wei": 1437664695,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53249206,
+      "tx_hash": "0x9d48028932ae223b3cd9ccff1a77677d05989040f31c99c563be625422e3002c",
+      "l1_fee_wei": 3351864183,
+      "execution_fee_wei": 391374494984
+    },
+    {
+      "block": 53251573,
+      "tx_hash": "0x90801c9a66fa24e60cc5fd932ff0ff819b9fe4f69082775eeeea82747ef8c296",
+      "l1_fee_wei": 2600737982,
+      "execution_fee_wei": 392663825408
+    },
+    {
+      "block": 53253941,
+      "tx_hash": "0x2906d8a66df355cdb6ca7b0c818475870e411bc64224b8e71a11e902515a4219",
+      "l1_fee_wei": 3000463845,
+      "execution_fee_wei": 148944000000
+    },
+    {
+      "block": 53256308,
+      "tx_hash": "0x3653a3b7f17b0db3d3052bfbc03182481e658ff6149b1aa3a0f3a4a04b18606a",
+      "l1_fee_wei": 1113230952,
+      "execution_fee_wei": 770541762812
+    },
+    {
+      "block": 53258676,
+      "tx_hash": "0x12248a076bf11a870c7deb5bb88e065a8fb46bfc34195ff8328a7d07546631c3",
+      "l1_fee_wei": 13763706411,
+      "execution_fee_wei": 2279382848380
+    },
+    {
+      "block": 53261043,
+      "tx_hash": "0x2247ff94ec2d344785105dd109bdaa8b15e13109da8053d4978928497dfc2025",
+      "l1_fee_wei": 160862193119,
+      "execution_fee_wei": 1587521087682
+    },
+    {
+      "block": 53263411,
+      "tx_hash": "0xf5ecffda7e85a9498cd40c7d56ca4a703f9404f73605e470bb9a19528fbc59af",
+      "l1_fee_wei": 251375545828,
+      "execution_fee_wei": 270282000000
+    },
+    {
+      "block": 53265778,
+      "tx_hash": "0x20e17590a737d6227474ef7d86a97f2a1e4fe6f7aeb151568f14cf87a9409f8d",
+      "l1_fee_wei": 258044344056,
+      "execution_fee_wei": 666554557746
+    },
+    {
+      "block": 53268146,
+      "tx_hash": "0x024d6680d01f32e2283bc37762e3185584ff20926f090287e57c74cbffd370f6",
+      "l1_fee_wei": 62664386627,
+      "execution_fee_wei": 211365880163
+    },
+    {
+      "block": 53270513,
+      "tx_hash": "0xa46462dbc1a96c00eb5ee3834820bc73237ff257c563888022ff0db36c27bc6e",
+      "l1_fee_wei": 19595971116,
+      "execution_fee_wei": 380366032602
+    },
+    {
+      "block": 53272881,
+      "tx_hash": "0xc4b8bb5d0a7f6092aa57bd8e84a0e5679a5316f2e9e696f2f4dc16a99657489f",
+      "l1_fee_wei": 3581572634,
+      "execution_fee_wei": 573100231900
+    },
+    {
+      "block": 53275248,
+      "tx_hash": "0x3004a592b8dee42e6e6a7e004347ab5469a65d93a348b09e2f8a2b19dc914b4a",
+      "l1_fee_wei": 3424144181,
+      "execution_fee_wei": 904726555299
+    },
+    {
+      "block": 53277616,
+      "tx_hash": "0x2d47b90d2adb3b07793644b6a3fc7917d60ba3be856a3d30499dd8188895a124",
+      "l1_fee_wei": 1551524306,
+      "execution_fee_wei": 168260099826
+    },
+    {
+      "block": 53279983,
+      "tx_hash": "0x358157114012156ffd7636c938541409dd60080d1a12f1b6c8f32a7a70194a93",
+      "l1_fee_wei": 1163175256,
+      "execution_fee_wei": 421254000000
+    },
+    {
+      "block": 53282351,
+      "tx_hash": "0x3348c0cb227907a798f1d41d3b3b76500368915dca19251b0c59c7c2ecfe2675",
+      "l1_fee_wei": 1412690201,
+      "execution_fee_wei": 361193000000
+    },
+    {
+      "block": 53284718,
+      "tx_hash": "0x8f0a334d11a10a9aaf326a39b68bb4c15820657e9db79fdad05bd52405884cf5",
+      "l1_fee_wei": 2850166061,
+      "execution_fee_wei": 270282000000
+    },
+    {
+      "block": 53287086,
+      "tx_hash": "0xdf21e592b8c2b6caf3360827a90fe8dc989b2055d1e2acc4865968918c77eee5",
+      "l1_fee_wei": 3156768282,
+      "execution_fee_wei": 832884000000
+    },
+    {
+      "block": 53289453,
+      "tx_hash": "0xd8f85e4d440fd535740993ccf0e83d7df26a902ab535ba3ec777b1daa8e68dd7",
+      "l1_fee_wei": 7230281979,
+      "execution_fee_wei": 40472355000000
+    },
+    {
+      "block": 53291821,
+      "tx_hash": "0x36e89b6509bebc7ffa068b4397e8e83af536785b39e5d2002d635977dd4352a9",
+      "l1_fee_wei": 8070411195,
+      "execution_fee_wei": 1114932561048
+    },
+    {
+      "block": 53294188,
+      "tx_hash": "0xa78c468704d21a492c0138dd5aae2e6549cc8c30c4a357712e5ffd3d5d5db92b",
+      "l1_fee_wei": 6304846432,
+      "execution_fee_wei": 759144000000
+    },
+    {
+      "block": 53296556,
+      "tx_hash": "0xffed878589ad1f32742342f6e392834ced8ec3009945f3d92fbdc3ff5ec58c9c",
+      "l1_fee_wei": 3132134772,
+      "execution_fee_wei": 381713526856
+    },
+    {
+      "block": 53298923,
+      "tx_hash": "0xa4429da4af0870f8038735f4614f2c3a6b41ee66864d480b08c58a0d3ba86d75",
+      "l1_fee_wei": 2483055722,
+      "execution_fee_wei": 367016931000
+    },
+    {
+      "block": 53301291,
+      "tx_hash": "0xc1fffbff445e536ba9fe8617a2d0d4ad27bf1bb7330cf3414b63b9c7965b7670",
+      "l1_fee_wei": 1271313198,
+      "execution_fee_wei": 3418745000000
+    },
+    {
+      "block": 53303658,
+      "tx_hash": "0x3a117e1f404ed4a18db2dd1c8ad6bdaf2344a63a50db758c734131097e9533fa",
+      "l1_fee_wei": 848387061,
+      "execution_fee_wei": 1020080051793
+    }
+  ]
+}

@@ -87,7 +87,10 @@ block data: base fee plus median priority fee for every Ethereum mainnet
 block from 20 to 30 October 2026 (78,953 blocks) and for 26,400 sampled Base
 blocks, via `eth_feeHistory` on public RPC nodes. The ETH price is the mean of
 CoinGecko's hourly prices on 30 October 2026. Each value in `prices.json`
-carries its source, block range and retrieval date.
+carries its source, block range and retrieval date. `python scripts/base_l1_fee.py`
+adds the L1 data fee that Base charged for real transactions with the same
+68-byte calldata as a commit (`data/base_l1_fee.json`, with every transaction
+hash).
 
 To create and check a single record yourself, use a separate local node:
 
