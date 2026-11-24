@@ -91,6 +91,43 @@ PYTHONPATH=src python -m provenance.cli commit prompt.txt output.txt example/mod
 PYTHONPATH=src python -m provenance.cli verify receipt.json
 ```
 
+## Experiments
+
+Both experiments start their own Anvil node on port 8546 and use the
+`provenance.cli` commands above, so they test exactly what a user would run.
+
+**LLM outputs.** `data/exp1_generations.jsonl` holds 24 outputs of
+Qwen2.5-1.5B-Instruct (revision `989aa79`, CPU, float32, the model's own
+sampling settings, seed 435 + prompt index) for the prompts in
+`data/exp1_prompts.json`. They are committed, so the experiments below need
+neither the model nor a GPU. To regenerate them (about 3 GB download):
+
+```bash
+pip install -r requirements-llm.txt
+python scripts/exp1_generate.py
+```
+
+Regenerating on the same machine gives identical text; other hardware or
+library versions may not.
+
+**Experiment 1, model label.** Commits every output three times, under its
+true model id, under another real model's id and under a made-up id, and
+verifies each receipt. Writes `data/exp1_results.csv` and
+`data/exp1_summary.json`.
+
+```bash
+python scripts/exp1_model_label.py
+```
+
+**Text encoding.** Commits every output once, rewrites the receipt in nine
+forms (NFD, CRLF, trailing space or newline, no-break space, reordered keys,
+compact or ASCII-escaped JSON, integers as floats) and verifies each. Writes
+`data/encoding_results.csv` and `data/encoding_summary.csv`.
+
+```bash
+python scripts/exp_encoding.py
+```
+
 ## Commitment scheme
 
 ```
@@ -120,6 +157,8 @@ it up in `ProvenanceRegistry`.
 | [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) | 5.6.1   | MIT     | `MerkleProof` library        |
 | [forge-std](https://github.com/foundry-rs/forge-std)                      | 1.17.0  | MIT / Apache-2.0 | Foundry test helpers |
 | [PyCryptodome](https://www.pycryptodome.org/)                              | 3.23.0  | BSD-2 / Public domain | Keccak-256 in Python |
+| [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) | rev. `989aa79` | Apache-2.0 | LLM outputs for the experiments (weights not in the repo) |
+| [PyTorch](https://pytorch.org) and [Transformers](https://github.com/huggingface/transformers) | 2.15.0, 5.24.0 | BSD-3, Apache-2.0 | Running the model (`requirements-llm.txt`) |
 
 Their licence files are kept in `lib/` and in the installed packages. All
 other code in this repository is ours.

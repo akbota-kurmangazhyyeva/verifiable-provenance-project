@@ -1,0 +1,10 @@
+variant,level,outputs,record_changed,verified,verified_when_record_changed,verified_when_record_unchanged,failure_stages,match_after_normalising
+nfd,text,24,10,14,0,14,opening,10
+crlf,text,24,8,16,0,16,opening,8
+trailing_space,text,24,24,0,0,0,opening,24
+trailing_newline,text,24,24,0,0,0,opening,24
+nbsp,text,24,21,3,0,3,opening,0
+keys_reordered,receipt,24,0,24,0,24,,n/a
+compact_json,receipt,24,0,24,0,24,,n/a
+ascii_escaped,receipt,24,0,24,0,24,,n/a
+ints_as_floats,receipt,24,24,0,0,0,opening,n/a
