@@ -1,0 +1,50 @@
+{
+  "period": "2026-10-20/2026-10-30",
+  "method": "per block: base fee + median priority fee (eth_feeHistory, reward percentile 50), in gwei",
+  "retrieved": "2026-11-24",
+  "chains": {
+    "ethereum": {
+      "rpc": "https://eth.drpc.org",
+      "sampling": "every block",
+      "blocks_sampled": 78953,
+      "first_block": 26230067,
+      "last_block": 26309019,
+      "gwei": {
+        "median": 0.09981906,
+        "mean": 0.9926437598797259,
+        "p95": 1.091252744,
+        "p99": 19.840419665,
+        "max": 254.75315276
+      },
+      "peak_block": 26301016,
+      "peak_block_time": "2026-10-29T21:13:59+00:00",
+      "peak_gwei": 254.75315276
+    },
+    "base": {
+      "rpc": "https://base.drpc.org",
+      "sampling": "24 windows of 100 consecutive blocks per day",
+      "blocks_sampled": 26400,
+      "first_block": 52832527,
+      "last_block": 53306026,
+      "gwei": {
+        "median": 0.006,
+        "mean": 0.006441312010075758,
+        "p95": 0.007288872,
+        "p99": 0.015221375,
+        "max": 0.105
+      },
+      "peak_block": 53217807,
+      "peak_block_time": "2026-10-28T22:02:41+00:00",
+      "peak_gwei": 0.105
+    }
+  },
+  "eth_usd": {
+    "date": "2026-10-30",
+    "source": "CoinGecko market_chart/range, hourly",
+    "mean": 2231.2569944386505,
+    "min": 2191.6347924033585,
+    "max": 2250.231101427986,
+    "hourly_points": 24,
+    "url": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1793318400&to=1793404799"
+  }
+}

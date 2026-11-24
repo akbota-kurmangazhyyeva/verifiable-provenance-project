@@ -20,6 +20,7 @@ does not prove *which model* produced it.
 | `scripts/`         | Measurement and plotting scripts                            |
 | `data/`            | Generated measurement data (CSV)                            |
 | `figures/`         | Figures, produced only by scripts in `scripts/`             |
+| `tables/`          | LaTeX tables for the paper, produced only by `scripts/`     |
 | `notebooks/`       | Exploratory analysis                                        |
 | `lib/`             | Git submodules: forge-std, OpenZeppelin Contracts           |
 
@@ -72,6 +73,21 @@ python scripts/plot_gas.py
 The first command starts and stops its own local node. It writes
 `data/gas_single.csv`, `data/gas_batch.csv`, and `gas_meta.json`; the second
 writes `figures/gas_per_record.pdf`.
+
+The dollar costs (Table 3) and the fit for inclusion-check gas (Eq. 3) are
+computed from those CSVs and `data/prices.json`:
+
+```bash
+python scripts/usd_costs.py         # writes data/usd_costs.csv, data/verify_fit.json, tables/usd_costs.tex
+python scripts/fetch_prices.py      # optional: re-derives data/prices.json, about 10 minutes
+```
+
+The gas prices are not read off a gas-tracker website but computed from
+block data: base fee plus median priority fee for every Ethereum mainnet
+block from 20 to 30 October 2026 (78,953 blocks) and for 26,400 sampled Base
+blocks, via `eth_feeHistory` on public RPC nodes. The ETH price is the mean of
+CoinGecko's hourly prices on 30 October 2026. Each value in `prices.json`
+carries its source, block range and retrieval date.
 
 To create and check a single record yourself, use a separate local node:
 

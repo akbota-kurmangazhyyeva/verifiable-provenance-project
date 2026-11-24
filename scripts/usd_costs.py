@@ -25,7 +25,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from provenance.costs import fit_log2, latex_int, latex_usd, significant, usd
+from provenance.costs import fit_log2, latex_int, latex_usd, usd
 
 DATA = ROOT / "data"
 TABLES = ROOT / "tables"
@@ -67,7 +67,7 @@ def latex_table(rows: list[tuple[str, str, float]], prices: dict) -> str:
         column += width
     lines.append("".join(rules))
     lines.append(" & & " + " & ".join(scenario["label"] for scenario in scenarios) + " \\\\")
-    lines.append("Design & Gas & " + " & ".join(f"{significant(scenario['gwei'])} gwei" for scenario in scenarios) + " \\\\")
+    lines.append("Design & Gas & " + " & ".join(f"{scenario['gwei']:.3g} gwei" for scenario in scenarios) + " \\\\")
     lines.append("\\midrule")
     for key, label, gas in rows:
         if key.startswith("check_"):

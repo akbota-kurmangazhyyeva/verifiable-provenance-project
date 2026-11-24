@@ -1,0 +1,49 @@
+{
+  "description": "Prices for the dollar figures in Table 3, derived by scripts/fetch_prices.py. Do not edit by hand; see data/fee_summary.json for the full statistics.",
+  "eth_usd": {
+    "value": 2231.26,
+    "date": "2026-10-30",
+    "source": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1793318400&to=1793404799",
+    "method": "mean of 24 hourly CoinGecko prices on 2026-10-30 (UTC); range 2,191.63 to 2,250.23",
+    "retrieved": "2026-11-24"
+  },
+  "scenarios": [
+    {
+      "key": "mainnet_median",
+      "chain": "Mainnet",
+      "label": "median",
+      "gwei": 0.09981906,
+      "statistic": "median of base fee + median priority fee per block",
+      "period": "2026-10-20/2026-10-30",
+      "blocks": "26230067-26309019, 78,953 sampled (every block)",
+      "source": "eth_feeHistory via https://eth.drpc.org",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "key": "mainnet_p99",
+      "chain": "Mainnet",
+      "label": "99th pct.",
+      "gwei": 19.840419665,
+      "statistic": "p99 of base fee + median priority fee per block",
+      "period": "2026-10-20/2026-10-30",
+      "blocks": "26230067-26309019, 78,953 sampled (every block)",
+      "source": "eth_feeHistory via https://eth.drpc.org",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "key": "base_median",
+      "chain": "Base",
+      "label": "median",
+      "gwei": 0.006,
+      "statistic": "median of base fee + median priority fee per block",
+      "period": "2026-10-20/2026-10-30",
+      "blocks": "52832527-53306026, 26,400 sampled (24 windows of 100 consecutive blocks per day)",
+      "source": "eth_feeHistory via https://base.drpc.org",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "context": {
+    "mainnet_peak": "254.8 gwei in block 26301016 at 2026-10-29T21:13:59+00:00",
+    "mainnet_mean": 0.9926437598797259
+  }
+}

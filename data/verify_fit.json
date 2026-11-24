@@ -1,0 +1,22 @@
+{
+  "model": "verification_gas = intercept + slope * log2(batch_size)",
+  "points": 11,
+  "batch_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "intercept": 24866.363636363636,
+  "slope": 1213.6545454545455,
+  "r_squared": 0.9968495895881406,
+  "max_abs_residual": 517.636363636364,
+  "measured_increase_largest_vs_single": 0.46273242987708785
+}

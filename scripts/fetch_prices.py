@@ -13,9 +13,10 @@ would have paid in that block.
 
 The ETH price is the mean of CoinGecko's hourly prices on `--eth-date` (UTC).
 
-Writes data/fee_daily.csv (per-day statistics) and data/fee_summary.json
-(period statistics). The scenarios used in the paper are chosen from these in
-data/prices.json, which scripts/usd_costs.py reads.
+Writes data/fee_daily.csv (per-day statistics), data/fee_summary.json
+(period statistics) and data/prices.json, the price scenarios that
+scripts/usd_costs.py turns into Table 3 (see SCENARIOS below). With
+--from-summary only data/prices.json is rebuilt, from the existing summary.
 
 Uses only public endpoints, no API keys. Override them with --mainnet-rpc and
 --base-rpc if they rate-limit you.
@@ -131,6 +132,48 @@ def eth_price(day: date) -> dict[str, object]:
     return {"mean": statistics.fmean(prices), "min": min(prices), "max": max(prices), "hourly_points": len(prices), "url": url}
 
 
+# The price scenarios in Table 3: (key, chain, column label, chain in summary, statistic).
+SCENARIOS = [
+    ("mainnet_median", "Mainnet", "median", "ethereum", "median"),
+    ("mainnet_p99", "Mainnet", "99th pct.", "ethereum", "p99"),
+    ("base_median", "Base", "median", "base", "median"),
+]
+
+
+def prices(summary: dict) -> dict:
+    eth = summary["eth_usd"]
+    result = {
+        "description": "Prices for the dollar figures in Table 3, derived by scripts/fetch_prices.py. Do not edit by hand; see data/fee_summary.json for the full statistics.",
+        "eth_usd": {
+            "value": round(eth["mean"], 2),
+            "date": eth["date"],
+            "source": eth["url"],
+            "method": f"mean of {eth['hourly_points']} hourly CoinGecko prices on {eth['date']} (UTC); range {eth['min']:,.2f} to {eth['max']:,.2f}",
+            "retrieved": summary["retrieved"],
+        },
+        "scenarios": [],
+    }
+    for key, chain, label, source_chain, statistic in SCENARIOS:
+        data = summary["chains"][source_chain]
+        result["scenarios"].append({
+            "key": key,
+            "chain": chain,
+            "label": label,
+            "gwei": data["gwei"][statistic],
+            "statistic": f"{statistic} of base fee + median priority fee per block",
+            "period": summary["period"],
+            "blocks": f"{data['first_block']}-{data['last_block']}, {data['blocks_sampled']:,} sampled ({data['sampling']})",
+            "source": f"eth_feeHistory via {data['rpc']}",
+            "retrieved": summary["retrieved"],
+        })
+    mainnet = summary["chains"]["ethereum"]
+    result["context"] = {
+        "mainnet_peak": f"{mainnet['peak_gwei']:.1f} gwei in block {mainnet['peak_block']} at {mainnet['peak_block_time']}",
+        "mainnet_mean": mainnet["gwei"]["mean"],
+    }
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--start", type=date.fromisoformat, default=date(2026, 10, 20))
@@ -139,7 +182,12 @@ def main() -> None:
     parser.add_argument("--mainnet-rpc", default="https://eth.drpc.org")
     parser.add_argument("--base-rpc", default="https://base.drpc.org")
     parser.add_argument("--base-windows-per-day", type=int, default=24)
+    parser.add_argument("--from-summary", action="store_true", help="only rebuild data/prices.json from data/fee_summary.json")
     args = parser.parse_args()
+    if args.from_summary:
+        summary = json.loads((DATA / "fee_summary.json").read_text())
+        (DATA / "prices.json").write_text(json.dumps(prices(summary), indent=2) + "\n")
+        return
 
     days = [args.start + timedelta(days=offset) for offset in range((args.end - args.start).days + 1)]
     chains = {
@@ -180,6 +228,7 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(daily_rows)
     (DATA / "fee_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+    (DATA / "prices.json").write_text(json.dumps(prices(summary), indent=2) + "\n")
     print(json.dumps(summary, indent=2))
 
 
