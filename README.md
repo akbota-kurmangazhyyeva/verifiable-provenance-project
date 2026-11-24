@@ -113,6 +113,33 @@ it up in `ProvenanceRegistry`.
 - `ProvenanceLog` is the cheaper baseline: it only emits an event, so other
   contracts cannot read it and duplicates are not rejected.
 
+## Sepolia deployment
+
+`scripts/sepolia_run.py` deploys both contracts to the Sepolia testnet and
+sends the same 52 commit transactions as `measure_gas.py`, with the same
+commitments, so each Sepolia transaction can be compared with its Anvil
+counterpart. It needs a funded Sepolia account; use a fresh one that holds
+only test ether, because its address and transaction hashes are published in
+`data/`.
+
+```bash
+cp .env.example .env     # then fill in SEPOLIA_RPC_URL and SEPOLIA_PRIVATE_KEY
+python scripts/sepolia_run.py
+```
+
+It shows the account, balance, gas price and expected cost and asks before
+sending. Results go to `data/sepolia_txs.csv`, `data/sepolia_batch.csv`,
+`data/sepolia_meta.json` and `tables/sepolia.tex`. To try it without spending
+anything, point it at a local node:
+`anvil --port 8547` and
+`ANVIL_KEY=<Anvil key above> python scripts/sepolia_run.py --rpc-url http://127.0.0.1:8547 --private-key-env ANVIL_KEY --chain-id 31337 --out-dir /tmp/sepolia-test`;
+every difference is then zero.
+
+Sepolia has run the Glamsterdam upgrade since 6 October 2026, which changes
+gas costs (new storage slots and contract code cost more, the base cost of a
+transaction less), so Sepolia gas is not expected to match Anvil's `prague`
+numbers or current mainnet.
+
 ## Third-party code
 
 | Component                                                                  | Version | Licence | Used for                     |
