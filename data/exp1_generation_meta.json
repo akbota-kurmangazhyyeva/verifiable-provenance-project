@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "seed": 435,
+  "sampling": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.1,
+    "max_new_tokens": 256
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "torch": "2.15.0",
+  "transformers": "5.24.0",
+  "python": "3.12.16",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "date": "2026-11-24"
+}
