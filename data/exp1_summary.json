@@ -1,0 +1,29 @@
+{
+  "outputs": 24,
+  "registry_transactions": 72,
+  "true": {
+    "label": "Qwen/Qwen2.5-1.5B-Instruct",
+    "committed": 24,
+    "verified": 24,
+    "label_printed_as_claim": 24,
+    "onchain_model_id_is_label": 24
+  },
+  "other": {
+    "label": "meta-llama/Llama-3.1-8B-Instruct",
+    "committed": 24,
+    "verified": 24,
+    "label_printed_as_claim": 24,
+    "onchain_model_id_is_label": 24
+  },
+  "fake": {
+    "label": "example/model-that-does-not-exist",
+    "committed": 24,
+    "verified": 24,
+    "label_printed_as_claim": 24,
+    "onchain_model_id_is_label": 24
+  },
+  "tampered_control": {
+    "checked": 24,
+    "verified": 0
+  }
+}

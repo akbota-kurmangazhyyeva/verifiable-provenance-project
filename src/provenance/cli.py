@@ -99,6 +99,7 @@ def verify_command(args: argparse.Namespace) -> int:
         return 1
     _, timestamp, block_number, _ = _get_record(registry, receipt["commitment"], rpc_url)
     print(f"Proven: this exact text existed no later than block {block_number} (timestamp {timestamp}).")
+    print(f"Claimed by the submitter, not checked: model {record.model!r}.")
     print("Not proven: which model wrote it.")
     return 0
 

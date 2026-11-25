@@ -1,0 +1,29 @@
+{
+  "description": "Prompts for Experiment 1 (model label) and the text-encoding experiment. Chosen to cover short low-entropy answers, multi-line answers, code, typographic characters and eight languages with accented or composed letters, so that NFD and CRLF variants change some outputs and not others.",
+  "prompts": [
+    {"id": "p01", "kind": "short", "text": "What is the capital of Australia? Answer in one word."},
+    {"id": "p02", "kind": "short", "text": "Is 97 a prime number? Answer yes or no."},
+    {"id": "p03", "kind": "short", "text": "What is 2+2? Reply with the number only."},
+    {"id": "p04", "kind": "short", "text": "Who wrote 'Pride and Prejudice'? Give only the name."},
+    {"id": "p05", "kind": "sentence", "text": "In one sentence, what does a cryptographic hash function do?"},
+    {"id": "p06", "kind": "sentence", "text": "Explain in three sentences why timestamps matter for documents."},
+    {"id": "p07", "kind": "multiline", "text": "List three uses of Merkle trees, one per line."},
+    {"id": "p08", "kind": "multiline", "text": "Write a haiku about blockchains."},
+    {"id": "p09", "kind": "multiline", "text": "Give step-by-step instructions for boiling an egg as a numbered list."},
+    {"id": "p10", "kind": "multiline", "text": "Write a short email of three lines declining a meeting invitation."},
+    {"id": "p11", "kind": "code", "text": "Write a Python function that returns the n-th Fibonacci number."},
+    {"id": "p12", "kind": "code", "text": "Write a SQL query that counts the rows of a table called orders."},
+    {"id": "p13", "kind": "typography", "text": "Write one sentence that uses an em dash and curly quotation marks."},
+    {"id": "p14", "kind": "typography", "text": "Use the words 'naïve', 'café' and 'Zoë' in one sentence."},
+    {"id": "p15", "kind": "typography", "text": "Convert 25 degrees Celsius to Fahrenheit and show the formula with the degree sign."},
+    {"id": "p16", "kind": "typography", "text": "How much might a coffee cost in Paris? Answer with a price using the € sign."},
+    {"id": "p17", "kind": "language", "text": "Traduisez en français : « The café near the theatre opens at eight. »"},
+    {"id": "p18", "kind": "language", "text": "Escribe una frase en español sobre la montaña más alta de España."},
+    {"id": "p19", "kind": "language", "text": "Beschreibe in einem Satz auf Deutsch, was eine Blockchain ist."},
+    {"id": "p20", "kind": "language", "text": "Напиши одно предложение о городе Алматы."},
+    {"id": "p21", "kind": "language", "text": "Қазақстанның астанасы қай қала? Қазақ тілінде жауап бер."},
+    {"id": "p22", "kind": "language", "text": "Hãy viết một câu về Hà Nội bằng tiếng Việt."},
+    {"id": "p23", "kind": "language", "text": "서울에 대해 한 문장으로 써 주세요."},
+    {"id": "p24", "kind": "language", "text": "Escreva uma frase em português sobre São Paulo."}
+  ]
+}
