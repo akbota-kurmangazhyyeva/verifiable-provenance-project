@@ -1,0 +1,11 @@
+{
+  "anvil_version": "anvil Version: 1.8.5",
+  "hardfork": "prague",
+  "seed": 20261127,
+  "runs_per_scenario_and_design": 10,
+  "scenarios": [
+    "committed_first",
+    "never_committed"
+  ],
+  "date": "2026-11-27"
+}
