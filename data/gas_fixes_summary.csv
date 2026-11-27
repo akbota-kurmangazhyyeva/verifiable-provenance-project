@@ -1,0 +1,4 @@
+design,first_commit_gas,mean_commit_gas_runs_2_on,min_commit_gas,max_commit_gas,calldata_bytes,verify_inclusion_gas_n64,extra_gas_vs_original,extra_percent_vs_original
+original,91317,74217,74217,74217,68,32070,0,0.0
+keyed,91536,74459.4,74448,74460,68,32960,242.4,0.33
+signed,97989,80886.5,80865,80889,228,32990,6669.5,8.99

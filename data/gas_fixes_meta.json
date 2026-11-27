@@ -1,0 +1,9 @@
+{
+  "anvil_version": "anvil Version: 1.8.5",
+  "hardfork": "prague",
+  "seed": 20261127,
+  "runs_per_design": 20,
+  "batch_size_for_inclusion_check": 64,
+  "note": "run 1 is reported separately: it changes the count slot from zero",
+  "date": "2026-11-27"
+}
